@@ -22,7 +22,7 @@
         h1,
         h2,
         h3 {
-           
+            font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
             letter-spacing: 3px;
             transition: transform 0.3s;
@@ -186,26 +186,42 @@
     </section>
 
     <script>
+        let lastScrollY = 0; // Variable für die letzte Scroll-Position
+        let isVideoChanged = false; // Flag, um zu verhindern, dass das Video ständig gewechselt wird
+    
         window.addEventListener("scroll", function () {
             let videoContainer = document.querySelector(".video-container");
             let navbar = document.querySelector(".navbar");
-            if (window.scrollY > 100) {
+            let videoElement = document.querySelector(".video-container video");
+    
+            // Überprüfen, ob der Scrollwert über 100px liegt
+            if (window.scrollY > 100 && !isVideoChanged) {
                 videoContainer.classList.add("scrolled");
                 navbar.classList.add("scrolled");
-            } else {
+                // Video nur ändern, wenn es noch nicht geändert wurde
+                videoElement.src = "/Video/mechanic2.mp4";
+                videoElement.load(); // Lädt das neue Video
+                videoElement.play(); // Startet das Video
+                isVideoChanged = true; // Setze das Flag, dass das Video geändert wurde
+            } else if (window.scrollY <= 100 && isVideoChanged) {
                 videoContainer.classList.remove("scrolled");
                 navbar.classList.remove("scrolled");
+                // Video nur ändern, wenn es noch nicht zurückgesetzt wurde
+                videoElement.src = "/Video/mechanic.mp4";
+                videoElement.load(); // Lädt das ursprüngliche Video
+                videoElement.play(); // Startet das ursprüngliche Video
+                isVideoChanged = false; // Setze das Flag zurück
             }
         });
-
-
+    
+        // Funktion für den Button-Klick
         document.getElementById("show-content-btn").addEventListener("click", function () {
             document.getElementById("content-section-1").classList.add("show");
             document.getElementById("content-section-2").classList.add("show");
         });
-
-
     </script>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
