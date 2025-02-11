@@ -5,13 +5,12 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  
 }
 
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 /* Navigation */
@@ -19,11 +18,12 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(207, 38, 38, 0.1);
   padding: 15px 0;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(9, 122, 160, 0.514);
   backdrop-filter: blur(10px);
+  z-index: 1050; /* Navbar über anderen Inhalten platzieren */
 }
 
 .navbar.scrolled {
@@ -34,18 +34,12 @@ h1, h2, h3 {
 
 .navbar .nav-link {
   color: white !important;
-  text-transform: uppercase;
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
   padding: 10px 15px;
-  text-decoration: none !important;
 }
 
-.navbar .nav-link:visited {
-  color: white !important;
-}
-
-.navbar .nav-link:hover, .navbar .nav-link:focus {
+.navbar .nav-link:hover {
   color: #ff4500 !important;
   transform: scale(1.1);
 }
@@ -79,28 +73,6 @@ h1, h2, h3 {
   filter: blur(5px);
 }
 
-/* Grid für Leistungen */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  padding: 60px;
-}
-
-.service-card {
-  background: #222;
-  color: white;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  transition: transform 0.3s, background 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  background: #ff4500;
-}
-
 /* Buttons */
 .btn-custom {
   background-color: #ff4500;
@@ -118,4 +90,17 @@ h1, h2, h3 {
 .btn-custom:hover {
   background-color: #cc3700;
   box-shadow: 0px 5px 20px rgba(255, 69, 0, 0.8);
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.hidden.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
