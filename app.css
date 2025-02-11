@@ -1,103 +1,102 @@
 /* Allgemeine Stile */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* Navigation */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px 0;
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-  
-  .navbar.scrolled {
-    background: #111;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
-  }
-  
-  .navbar .nav-link {
-    color: white !important;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    font-weight: bold;
-    padding: 10px 15px;
-  }
-  
-  .navbar .nav-link:hover {
-    color: #ff4500 !important;
-  }
-  
-  /* Hero Video mit Scroll-Effekt */
-  .showcase {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .video-container video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  }
-  
-  .scrolled .video-container video {
-    transform: scale(1.1);
-    opacity: 0.7;
-    filter: blur(3px);
-  }
-  
-  /* Grid für Leistungen */
-  .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    padding: 60px;
-  }
-  
-  .service-card {
-    background: #222;
-    color: white;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    transition: transform 0.3s, background 0.3s;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    background: #ff4500;
-  }
-  
-  /* Buttons */
-  .btn-custom {
-    background-color: #ff4500;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.3s;
-    cursor: pointer;
-    box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.5);
-  }
-  
-  .btn-custom:hover {
-    background-color: #cc3700;
-    box-shadow: 0px 5px 20px rgba(255, 69, 0, 0.8);
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+  background: #111;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.navbar .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.navbar .nav-link:hover {
+  color: #ff4500 !important;
+}
+
+/* Hero Video mit Scroll-Effekt */
+.showcase {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.scrolled .video-container video {
+  transform: scale(1.1);
+  opacity: 0.7;
+  filter: blur(3px);
+}
+
+/* Grid für Leistungen */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.service-card {
+  background: #222;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #ff4500;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+.btn-custom:hover {
+  background-color: #cc3700;
+  box-shadow: 0px 5px 20px rgba(255, 69, 0, 0.8);
+}
