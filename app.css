@@ -1,6 +1,6 @@
 /* Allgemeine Stile */
 body {
-  font-family: 'Roboto', sans-serif;
+
   background-color: #1a1a1a;
   color: white;
   margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -19,7 +19,6 @@ h1, h2, h3 {
   top: 0;
   width: 100%;
   background: rgba(207, 38, 38, 0.1);
-  padding: 15px 0;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
   box-shadow: 0px 4px 10px rgba(9, 122, 160, 0.514);
   backdrop-filter: blur(10px);
@@ -29,14 +28,14 @@ h1, h2, h3 {
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .navbar .nav-link {
   color: white !important;
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 1px 15px;
 }
 
 .navbar .nav-link:hover {
@@ -87,6 +86,13 @@ h1, h2, h3 {
   box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.5);
 }
 
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .btn-custom:hover {
   background-color: #cc3700;
   box-shadow: 0px 5px 20px rgba(255, 69, 0, 0.8);
@@ -103,4 +109,8 @@ h1, h2, h3 {
   display: block;
   opacity: 1;
   transform: translateY(0);
+}
+
+li {
+  font-size: 24px;
 }
