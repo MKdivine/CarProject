@@ -7,10 +7,12 @@ body {
   padding: 0;
 }
 
+
 h1, h2, h3 {
 
   text-transform: uppercase;
   letter-spacing: 3px;
+  
 }
 
 /* Navigation */
@@ -18,7 +20,7 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(176, 160, 160, 0.1);
+  background: rgba(122, 5, 224, 0.984);
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
   box-shadow: 0px 4px 10px rgb(173, 15, 15);
   backdrop-filter: blur(10px);
@@ -32,11 +34,12 @@ h1, h2, h3 {
 }
 
 .navbar .nav-link {
-  color: rgb(198, 202, 211) !important;
+  color: rgb(249, 244, 244) !important;
+  
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
-  padding: 1px 15px;
-  text-shadow: 1px 2px 2px rgba(246, 44, 209, 0.46);
+  padding: 1px 18px;
+  text-shadow: 1px 2px 12px rgba(9, 9, 228, 0.993);
 }
 
 .navbar .nav-link:hover {
@@ -88,15 +91,15 @@ h1, h2, h3 {
 }
 
 .forum-regular {
-  font-family: "Forum", serif;
+
   font-weight: 400;
   font-style: normal;
 }
 
 
 .btn-custom:hover {
-  background-color: #cc3700;
-  box-shadow: 0px 5px 20px rgba(255, 69, 0, 0.8);
+  background-color: #fbfbfb;
+  box-shadow: 0px 5px 20px rgb(44, 11, 228);
 }
 
 .hidden {
@@ -114,4 +117,11 @@ h1, h2, h3 {
 
 li {
   font-size: 24px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #1d3926b4;
+  border: #a3cad8;
+  border-radius: 2%;
+  
 }

@@ -1,0 +1,26 @@
+{
+  "name": "carproject",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKdivine/CarProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKdivine/CarProject/issues"
+  },
+  "homepage": "https://github.com/MKdivine/CarProject#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
