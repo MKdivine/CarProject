@@ -11,6 +11,7 @@ h1, h2, h3 {
   letter-spacing: 3px;
   transition: transform 0.3s;
   text-shadow: 2px 4px 2px black;
+  color: #ee0b0b;
 }
 
 h1:hover, h2:hover, h3:hover {
@@ -25,7 +26,7 @@ h1:hover, h2:hover, h3:hover {
   background: rgba(122, 5, 224, 0.984);
   padding: 20px 0;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-  box-shadow: 0px 4px 10px rgb(173, 15, 15);
+  box-shadow: 0px 4px 10px rgb(11, 8, 92);
   backdrop-filter: blur(10px);
   z-index: 1050;
 }
@@ -37,15 +38,15 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .navbar .nav-link {
-  color: rgb(249, 244, 244) !important;
+  color: rgb(11, 171, 235) !important;
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
   padding: 1px 18px;
-  text-shadow: 7px 2px 12px rgba(230, 44, 11, 0.993);
+  text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
 }
 
 .navbar .nav-link:hover {
-  color: #ff4400c8 !important;
+  color: #e6531ec8 !important;
   transform: scale(1.1);
 }
 
@@ -113,9 +114,10 @@ h1:hover, h2:hover, h3:hover {
 
 /* List Items */
 li {
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Bebas Neue", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: bold;
+     
  
 }
