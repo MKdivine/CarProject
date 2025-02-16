@@ -1,3 +1,13 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+
+// EJS als View-Engine festlegen
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views')); // Ordner für EJS-Templates
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 // Importiere das MongoDB-Modul
 const { MongoClient } = require('mongodb');
 
