@@ -6,9 +6,7 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: transform 0.3s;
@@ -16,9 +14,7 @@ h3 {
   color: #ee0b0b;
 }
 
-h1:hover,
-h2:hover,
-h3:hover {
+h1:hover, h2:hover, h3:hover {
   transform: scale(1.2);
 }
 
@@ -122,6 +118,4 @@ li {
   font-family: "Bebas Neue", serif;
   font-weight: 400;
   font-style: bold;
-
-
 }
