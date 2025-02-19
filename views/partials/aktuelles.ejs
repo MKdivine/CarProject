@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h1>Aktuelles</h1>
+
+<!-- Formular zum Erstellen eines neuen Blog-Posts -->
+<form action="/aktuelles" method="POST">
+  <input type="text" name="title" placeholder="Titel" required>
+  <textarea name="content" placeholder="Inhalt" required></textarea>
+  <button type="submit">Post erstellen</button>
+</form>
+
+<!-- Liste aller Blog-Posts -->
+<% posts.forEach(post => { %>
+  <div>
+    <h2><%= post.title %></h2>
+    <p><%= post.content %></p>
+    <small><%= post.createdAt.toLocaleDateString() %></small>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>

@@ -10,7 +10,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: transform 0.3s;
-  text-shadow: 2px 4px 2px black;
+  text-shadow: 2px 4px 2px rgb(176, 27, 27);
   color: #ee0b0b;
 }
 
@@ -24,7 +24,7 @@ h1:hover, h2:hover, h3:hover {
   width: 100%;
   padding: 6px 1px;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-  box-shadow: 4px 4px 8px rgb(17, 12, 152);
+  box-shadow: 4px 4px 8px rgb(20, 17, 102);
   backdrop-filter: blur(10px);
   z-index: 1050;
 }
