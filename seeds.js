@@ -42,7 +42,7 @@ const products = [
 Product.insertMany(products)
 .then(() => {
     console.log("Product saved successfully");
-    console.log(P)
+    console.log(products);
 })
 .catch((error) => {
     console.log("Error saving product:", error);
