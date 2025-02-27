@@ -2,7 +2,10 @@ const express = require("express")
 const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/CarProject", {
+
+const Product = require("./models/product");
+
+mongoose.connect("mongodb://localhost:27017/CarShop", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
