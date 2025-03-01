@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Fahrzeugtechnik</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
    <link rel="stylesheet" href="/app.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,65 +17,71 @@
          z-index: 1000;
       }
 
-      /* Reset margins and padding for headings and sections */
-      h1,
-      h2,
-      h3,
-      section {
-         margin: 0;
-         padding: 0;
-      }
-
       .prices {
-         padding: 100px 0;
-         background-color: #1d1115;
+         background: linear-gradient(135deg, #1d1115, #2c3e50);
          color: rgba(196, 188, 208, 0.628);
          text-shadow: 2px 4px 2px rgb(11, 9, 41);
+         padding: 100px 0;
       }
 
-      .service-list {
-         list-style-type: none;
-         padding-left: 0;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
+      .card {
+         border: none;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
-      .service-list ul {
-         padding-left: 20px;
-         list-style-type: disc;
+      .card-title {
+         font-size: 1.5em;
+         margin-bottom: 15px;
       }
 
-      .service-list li {
+      .list-unstyled li {
          margin-bottom: 10px;
       }
 
-      .service-list strong {
-         color: #f0d0d0;
+      .navbar-brand {
+         font-family: 'Anton', sans-serif;
+         font-size: 1.5em;
+      }
+
+      .nav-link {
+         font-family: 'Bebas Neue', sans-serif;
          font-size: 1.2em;
       }
 
-      li {
-         margin-bottom: 10px;
-         list-style-type: none;
-         margin: 0;
-         padding: 0;
-         
+      .nav-link:hover {
+         color: #f0d0d0 !important;
+      }
+
+      footer {
+         background-color: #1d1115;
+         color: rgba(196, 188, 208, 0.628);
+         padding: 20px 0;
+      }
+
+      footer a {
+         color: rgba(196, 188, 208, 0.628);
+         text-decoration: none;
+      }
+
+      footer a:hover {
+         color: #f0d0d0;
       }
    </style>
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
+         <a class="navbar-brand" href="../index.html">Fahrzeugtechnik</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Menü umschalten">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="nav justify-content-center">
-               <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
                <li class="nav-item"><a class="nav-link" href="aktuelles.html">News</a></li>
                <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
                <li class="nav-item"><a class="nav-link" href="preise.html">Preise</a></li>
@@ -85,45 +92,58 @@
       </div>
    </nav>
 
-   <!--====== PRICING STYLE ONE START ======-->
+   <!-- Pricing Section -->
    <div class="prices">
       <section class="pricing-area pricing-one">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-xxl-6 col-xl-7 col-lg-8">
-                  <div class="section-title text-center">
+               <div class="col-xxl-8 col-xl-9 col-lg-10">
+                  <div class="section-title text-center mb-5">
                      <h2 class="mb-3 fw-bold">Unsere Dienstleistungen</h2>
-                     <div class="service-list">
-                        <ul>
-                           <li><strong>Service</strong>
-                              <ul>
-                                 <li>Ölwechsel</li>
-                                 <li>Frontscheibentausch</li>
-                                 <li>Unfallinstandsetzung</li>
-                                 <li>ReifenService</li>
-                                 <li>Klimaservice</li>
-                                 <li>Bootsservice</li>
-                                 <li>AutoTransport Überführung Verzollung</li>
-                                 <li>Boot Transport Überführung Verzollung</li>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 mb-4">
+                        <div class="card h-100 bg-dark text-white">
+                           <div class="card-body">
+                              <h5 class="card-title fw-bold"><i class="fas fa-tools me-2"></i>Service</h5>
+                              <ul class="list-unstyled">
+                                 <li><i class="fas fa-oil-can me-2"></i>Ölwechsel</li>
+                                 <li><i class="fas fa-car-crash me-2"></i>Frontscheibentausch</li>
+                                 <li><i class="fas fa-wrench me-2"></i>Unfallinstandsetzung</li>
+                                 <li><i class="fas fa-tire me-2"></i>ReifenService</li>
+                                 <li><i class="fas fa-wind me-2"></i>Klimaservice</li>
+                                 <li><i class="fas fa-ship me-2"></i>Bootsservice</li>
+                                 <li><i class="fas fa-truck-moving me-2"></i>AutoTransport Überführung Verzollung</li>
+                                 <li><i class="fas fa-anchor me-2"></i>Boot Transport Überführung Verzollung</li>
                               </ul>
-                           </li>
-                           <li><strong>Vermietung</strong>
-                              <ul>
-                                 <li>Anhänger Trailer</li>
-                                 <li>T5 Camper</li>
-                                 <li>T5 Multivan 7 Plätzer</li>
-                                 <li>Anhänger</li>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card h-100 bg-dark text-white">
+                           <div class="card-body">
+                              <h5 class="card-title fw-bold"><i class="fas fa-caravan me-2"></i>Vermietung</h5>
+                              <ul class="list-unstyled">
+                                 <li><i class="fas fa-trailer me-2"></i>Anhänger Trailer</li>
+                                 <li><i class="fas fa-campground me-2"></i>T5 Camper</li>
+                                 <li><i class="fas fa-van-shuttle me-2"></i>T5 Multivan 7 Plätzer</li>
+                                 <li><i class="fas fa-trailer me-2"></i>Anhänger</li>
                               </ul>
-                           </li>
-                           <li><strong>Ankauf & Verkauf</strong>
-                              <ul>
-                                 <li>Auto</li>
-                                 <li>Motorrad</li>
-                                 <li>Anhänger</li>
-                                 <li>Boot</li>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card h-100 bg-dark text-white">
+                           <div class="card-body">
+                              <h5 class="card-title fw-bold"><i class="fas fa-handshake me-2"></i>Ankauf & Verkauf</h5>
+                              <ul class="list-unstyled">
+                                 <li><i class="fas fa-car me-2"></i>Auto</li>
+                                 <li><i class="fas fa-motorcycle me-2"></i>Motorrad</li>
+                                 <li><i class="fas fa-trailer me-2"></i>Anhänger</li>
+                                 <li><i class="fas fa-ship me-2"></i>Boot</li>
                               </ul>
-                           </li>
-                        </ul>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -131,6 +151,18 @@
          </div>
       </section>
    </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+         <p class="mb-0">&copy; 2023 Fahrzeugtechnik. Alle Rechte vorbehalten.</p>
+         <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+      </div>
+   </footer>
 
    <script src="../JS/bootstrap.min.js"></script>
 </body>
