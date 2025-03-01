@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
    <meta charset="UTF-8">
@@ -30,7 +30,30 @@
          background-color: #1d1115;
          color: rgba(196, 188, 208, 0.628);
          text-shadow: 2px 4px 2px rgb(11, 9, 41);
+      }
 
+      .service-list {
+         list-style-type: none;
+         padding-left: 0;
+      }
+
+      .service-list ul {
+         padding-left: 20px;
+         list-style-type: disc;
+      }
+
+      .service-list li {
+         margin-bottom: 10px;
+      }
+
+      .service-list strong {
+         color: #fff;
+         font-size: 1.2em;
+      }
+
+      li {
+         margin-bottom: 10px;
+         list-style-type: none;
       }
    </style>
 </head>
@@ -44,8 +67,8 @@
          </button>
          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav justify-content-center">
-               <li class="nav-item "><a class="nav-link" href="../index.html">Home</a></li>
-               <li class="nav-item "><a class="nav-link" href="aktuelles.html">News</a></li>
+               <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="aktuelles.html">News</a></li>
                <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
                <li class="nav-item"><a class="nav-link" href="preise.html">Preise</a></li>
                <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
@@ -57,41 +80,52 @@
 
    <!--====== PRICING STYLE ONE START ======-->
    <div class="prices">
-
-
       <section class="pricing-area pricing-one">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xxl-6 col-xl-7 col-lg-8">
                   <div class="section-title text-center">
-                     <h2 class="mb-3 fw-bold">Our Pricing</h2>
-                     <p class="text-lg">
-                     <h2>Service<h2>
-                           <li>Ölwechsel</li>
-                           <li>Frontscheibentausch</li>
-                           <li>Unfallinstandsetzung</li>
-                           <li>ReifenService</li>
-                           <li>Klimaservice</li>
-                           <li>Bootsservice</li>
-                           <li>AutoTransport Überführung Verzollung</li>
-                           <li>Boot Transport Überführung Verzollung</li>
-
-                           <h2>Vermietung</h2>
-                           <li>Anhänger Trailer</li>
-                           <li>T5 Camper</li>
-                           <li>T5 Multivan 7 Plätzer</li>
-                           <li>Anhänger </li>
-
-                           <h2>Ankauf Verkauf Auto Motorrad Anhänger Boot</h2>
-
-                           </p>
+                     <h2 class="mb-3 fw-bold">Unsere Dienstleistungen</h2>
+                     <div class="service-list">
+                        <ul>
+                           <li><strong>Service</strong>
+                              <ul>
+                                 <li>Ölwechsel</li>
+                                 <li>Frontscheibentausch</li>
+                                 <li>Unfallinstandsetzung</li>
+                                 <li>ReifenService</li>
+                                 <li>Klimaservice</li>
+                                 <li>Bootsservice</li>
+                                 <li>AutoTransport Überführung Verzollung</li>
+                                 <li>Boot Transport Überführung Verzollung</li>
+                              </ul>
+                           </li>
+                           <li><strong>Vermietung</strong>
+                              <ul>
+                                 <li>Anhänger Trailer</li>
+                                 <li>T5 Camper</li>
+                                 <li>T5 Multivan 7 Plätzer</li>
+                                 <li>Anhänger</li>
+                              </ul>
+                           </li>
+                           <li><strong>Ankauf & Verkauf</strong>
+                              <ul>
+                                 <li>Auto</li>
+                                 <li>Motorrad</li>
+                                 <li>Anhänger</li>
+                                 <li>Boot</li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>
-
          </div>
+      </section>
+   </div>
 
-         <script src="../JS/bootstrap.min.js"></script>
+   <script src="../JS/bootstrap.min.js"></script>
 </body>
 
 </html>
