@@ -20,7 +20,7 @@ h1:hover, h2:hover, h3:hover {
 
 /* Navigation */
 .navbar {
-  position: fixed;
+  display: flex;
   width: 100%;
   padding: 6px 1px;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
@@ -28,6 +28,12 @@ h1:hover, h2:hover, h3:hover {
   backdrop-filter: blur(10px);
   z-index: 1050;
   background-color: transparent !important;
+  flex-grow: 0;
+
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important;
 }
 
 .navbar.scrolled {
@@ -45,17 +51,29 @@ h1:hover, h2:hover, h3:hover {
   color: #f3f9f2;
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+}
 .nav-link {
   color: rgb(11, 171, 235) !important;
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
-  padding: 1px 18px;
+  padding: 4px 18px;
   text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.2em;
+  
 }
 
 .nav-link:hover {
@@ -128,10 +146,10 @@ h1:hover, h2:hover, h3:hover {
 
 /* List Items */
 li {
-  font-size: 22px;
   font-family: "Bebas Neue", serif;
   font-weight: 400;
   margin-bottom: 10px;
+  font-size: 26px;
 }
 
 /* Prices Section */
