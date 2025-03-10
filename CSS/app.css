@@ -1,34 +1,170 @@
-body{
-    background-color: #f7f7ff;
-    margin-top:20px;
+/* General Styles */
+body {
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
-.btn-white {
-    background-color: #fff;
-    border-color: #e7eaf3;
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: transform 0.3s;
+  text-shadow: 2px 4px 2px black;
+  color: #ee0b0b;
 }
-.radius-15 {
-    border-radius: 15px;
+
+h1:hover, h2:hover, h3:hover {
+  transform: scale(1.2);
 }
-.contacts-social a {
-    font-size: 16px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    background: #ffffff;
-    border: 1px solid #eeecec;
-    text-align: center;
-    border-radius: 50%;
-    color: #2b2a2a;
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 6px 1px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  box-shadow: 4px 1px 2px rgb(22, 8, 178);
+  backdrop-filter: blur(10px);
+  z-index: 1050;
+  background-color: transparent !important;
 }
-.bg-info {
-    background-color: #0dcaf0!important;
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
-.bg-primary {
-    background-color: #008cff!important;
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-shadow: 1px 4px 2px rgba(24, 51, 156, 0.262);
+  color: #e3d7d7;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
 }
-.bg-danger {
-    background-color: #fd3550!important;
+
+.nav-link {
+  color: rgb(11, 171, 235) !important;
+  transition: color 0.3s, transform 0.2s;
+  font-weight: bold;
+  padding: 1px 18px;
+  text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2em;
 }
-.bg-warning {
-    background-color: #ffc107!important;
+
+.nav-link:hover {
+  color: #e6531ec8 !important;
+  transform: scale(1.1);
+}
+
+/* Hero Video with Scroll Effect */
+.showcase {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video-container.scrolled {
+  transform: scale(1.1);
+  opacity: 0.5;
+  filter: blur(8px);
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+.btn-custom:hover {
+  background-color: #fbfbfb;
+  box-shadow: 0px 5px 20px rgb(89, 67, 215);
+}
+
+/* Hidden Elements */
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.hidden.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* List Items */
+li {
+  font-size: 22px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Prices Section */
+.prices {
+  background: linear-gradient(135deg, #2b1a79, #29e0ea);
+  color: rgba(119, 61, 206, 0.628);
+  text-shadow: 2px 4px 2px rgb(11, 9, 41);
+  padding: 100px 0;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: auto;
+}
+
+.card-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #1d1115;
+  color: rgba(196, 188, 208, 0.628);
+  padding: 20px 0;
+}
+
+footer a {
+  color: rgba(196, 188, 208, 0.628);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f0d0d0;
 }
