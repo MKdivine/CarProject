@@ -28,12 +28,6 @@ h1:hover, h2:hover, h3:hover {
   backdrop-filter: blur(10px);
   z-index: 1050;
   background-color: transparent !important;
-  flex-grow: 0;
-
-}
-
-.navbar-collapse{
-  flex-grow: 0 !important;
 }
 
 .navbar.scrolled {
@@ -42,16 +36,26 @@ h1:hover, h2:hover, h3:hover {
   transform: translateY(-1px);
 }
 
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
 .navbar-brand {
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 9px;
+  letter-spacing: 7px;
   text-shadow: 3px 4px 2px rgba(103, 24, 156, 0.262);
   font-family: 'Anton', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2em;
+  color: #ecf3f5f2 !important;
+  transition: color 0.3s ease;
+}
 
+.navbar-brand:hover {
+  color: #ee0b0b !important;
 }
 
 .navbar-nav {
@@ -63,6 +67,7 @@ h1:hover, h2:hover, h3:hover {
   text-align: center;
   padding-top: 10px;
 }
+
 .nav-link {
   color: rgb(11, 171, 235) !important;
   transition: color 0.3s, transform 0.2s;
@@ -70,13 +75,18 @@ h1:hover, h2:hover, h3:hover {
   padding: 4px 18px;
   text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
   font-family: 'Bebas Neue', sans-serif;
-  
+  font-size: 1.1em;
+  margin: 0 5px;
 }
 
 .nav-link:hover {
   color: #190ccdc8 !important;
-  
-  transform: scale(1);
+  transform: scale(1.05);
+}
+
+.nav-link.active {
+  color: #ee0b0b !important;
+  border-bottom: 2px solid #ee0b0b;
 }
 
 /* Hero Video with Scroll Effect */
@@ -186,64 +196,24 @@ footer a:hover {
   color: #f0d0d0;
 }
 
-
-/* Navbar allgemein */
-.navbar {
-  padding: 10px 0; /* Padding oben und unten */
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Navbar Brand (Logo oder Name) */
-.navbar-brand {
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #0bb8f2f2 !important; /* Farbe anpassen */
-  transition: color 0.3s ease;
-}
-
-.navbar-brand:hover {
-  color: #ee0b0b !important; /* Hover-Farbe */
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 8px 15px; /* Abstand zwischen Links */
-  margin: 0 5px; /* Abstand zwischen Links */
-  color: rgb(11, 171, 235) !important; /* Standardfarbe */
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #e6531ec8 !important; /* Hover-Farbe */
-  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
-}
-
-.navbar-nav .nav-link.active {
-  color: #ee0b0b !important; /* Farbe für aktive Seite */
-  border-bottom: 2px solid #ee0b0b; /* Unterstreichen der aktiven Seite */
-}
-
 /* Navbar Toggler (Hamburger-Menü) */
 .navbar-toggler {
-  border: none; /* Rahmen entfernen */
-  padding: 0.5rem; /* Padding anpassen */
+  border: none;
+  padding: 0.5rem;
 }
 
 .navbar-toggler:focus {
-  box-shadow: none; /* Fokus-Effekt entfernen */
+  box-shadow: none;
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 992px) {
   .navbar-nav {
-     text-align: center; /* Links zentrieren auf mobilen Geräten */
-     padding-top: 10px; /* Abstand oben */
+    text-align: center;
+    padding-top: 10px;
   }
 
   .navbar-nav .nav-link {
-     margin: 5px 0; /* Abstand zwischen Links auf mobilen Geräten */
+    margin: 5px 0;
   }
 }
