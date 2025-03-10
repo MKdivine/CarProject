@@ -24,7 +24,7 @@ h1:hover, h2:hover, h3:hover {
   width: 100%;
   padding: 6px 1px;
   transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-  box-shadow: 4px 1px 2px rgb(22, 8, 178);
+  box-shadow: 4px 1px 2px rgb(12, 8, 47);
   backdrop-filter: blur(10px);
   z-index: 1050;
   background-color: transparent !important;
@@ -33,7 +33,7 @@ h1:hover, h2:hover, h3:hover {
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
+  transform: translateY(-1px);
 }
 
 .navbar-brand {
@@ -42,9 +42,10 @@ h1:hover, h2:hover, h3:hover {
   letter-spacing: 5px;
   font-size: 24px;
   text-shadow: 1px 4px 2px rgba(24, 51, 156, 0.262);
-  color: #e3d7d7;
+  color: #f3f9f2;
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
+
 }
 
 .nav-link {
@@ -58,8 +59,9 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .nav-link:hover {
-  color: #e6531ec8 !important;
-  transform: scale(1.1);
+  color: #190ccdc8 !important;
+  
+  transform: scale(1);
 }
 
 /* Hero Video with Scroll Effect */
@@ -167,4 +169,66 @@ footer a {
 
 footer a:hover {
   color: #f0d0d0;
+}
+
+
+/* Navbar allgemein */
+.navbar {
+  padding: 10px 0; /* Padding oben und unten */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar Brand (Logo oder Name) */
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #e3d7d7 !important; /* Farbe anpassen */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ee0b0b !important; /* Hover-Farbe */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 8px 15px; /* Abstand zwischen Links */
+  margin: 0 5px; /* Abstand zwischen Links */
+  color: rgb(11, 171, 235) !important; /* Standardfarbe */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e6531ec8 !important; /* Hover-Farbe */
+  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ee0b0b !important; /* Farbe für aktive Seite */
+  border-bottom: 2px solid #ee0b0b; /* Unterstreichen der aktiven Seite */
+}
+
+/* Navbar Toggler (Hamburger-Menü) */
+.navbar-toggler {
+  border: none; /* Rahmen entfernen */
+  padding: 0.5rem; /* Padding anpassen */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Fokus-Effekt entfernen */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 992px) {
+  .navbar-nav {
+     text-align: center; /* Links zentrieren auf mobilen Geräten */
+     padding-top: 10px; /* Abstand oben */
+  }
+
+  .navbar-nav .nav-link {
+     margin: 5px 0; /* Abstand zwischen Links auf mobilen Geräten */
+  }
 }
