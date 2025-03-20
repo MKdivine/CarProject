@@ -11,7 +11,7 @@ h1, h2, h3 {
   letter-spacing: 3px;
   transition: transform 0.3s;
   text-shadow: 2px 4px 2px black;
-  color: #ee0b0b;
+  color: #9e1616;
 }
 
 h1:hover, h2:hover, h3:hover {
@@ -35,6 +35,7 @@ h1:hover, h2:hover, h3:hover {
   transform: translateY(-1px);
 }
 
+
 .navbar-brand {
   font-weight: bold;
   text-transform: uppercase;
@@ -47,11 +48,24 @@ h1:hover, h2:hover, h3:hover {
   font-size: 1.8em;
   color: #ecf3f5f2 !important;
   transition: color 0.3s ease;
-
 }
 
 .navbar-brand:hover {
   color: #ee0b0b !important;
+}
+
+
+/* Adjust the navbar brand font size and allow wrapping for smaller screens */
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 0.9rem; /* Adjust the size as needed */
+    white-space: normal; /* Allow text wrapping */
+    text-align: center; /* Center the text if needed */
+  }
+}
+
+.navbar-brand:hover {
+  color: #636b9b !important;
 }
 
 .navbar-nav {
