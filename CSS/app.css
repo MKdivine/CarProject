@@ -47,7 +47,7 @@ h1:hover, h2:hover, h3:hover {
   font-size: 1.8em;
   color: #ecf3f5f2 !important;
   transition: color 0.3s ease;
-  flex-wrap: wrap;
+
 }
 
 .navbar-brand:hover {
