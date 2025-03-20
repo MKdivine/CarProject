@@ -16,7 +16,6 @@ h1, h2, h3 {
 
 h1:hover, h2:hover, h3:hover {
   transform: scale(1.1);
-  
 }
 
 /* Navigation */
@@ -36,10 +35,6 @@ h1:hover, h2:hover, h3:hover {
   transform: translateY(-1px);
 }
 
-.navbar-collapse {
-  flex-grow: 0 !important;
-}
-
 .navbar-brand {
   font-weight: bold;
   text-transform: uppercase;
@@ -52,6 +47,7 @@ h1:hover, h2:hover, h3:hover {
   font-size: 1.8em;
   color: #ecf3f5f2 !important;
   transition: color 0.3s ease;
+  flex-wrap: wrap;
 }
 
 .navbar-brand:hover {
@@ -62,8 +58,7 @@ h1:hover, h2:hover, h3:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   padding-top: 10px;
 }
@@ -161,17 +156,11 @@ li {
 
 /* Prices Section */
 .prices {
-  
   background: linear-gradient(135deg, #2b1a79, #29e0ea);
   color: rgba(119, 61, 206, 0.628);
   text-shadow: 2px 4px 2px rgb(11, 9, 41);
   padding: 100px 0;
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  
 }
 
 /* Cards */
@@ -179,7 +168,6 @@ li {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: auto;
 }
 
 .card-title {
@@ -203,7 +191,7 @@ footer a:hover {
   color: #f0d0d0;
 }
 
-/* Navbar Toggler (Hamburger-Menü) */
+/* Navbar Toggler */
 .navbar-toggler {
   border: none;
   padding: 0.5rem;
