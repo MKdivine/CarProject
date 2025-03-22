@@ -51,27 +51,20 @@ h1:hover, h2:hover, h3:hover {
 .navbar-brand {
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   text-shadow: 3px 4px 2px rgba(103, 24, 156, 0.262);
   font-family: 'Anton', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #ecf3f5f2 !important;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand:hover {
   color: #d89a9a !important;
-}
-
-@media (max-width: 700px) {
-  .navbar-brand, .nav-link {
-    font-size: 0.9rem;
-    white-space: normal;
-    text-align: center;
-  }
 }
 
 .navbar-nav {
@@ -90,7 +83,7 @@ h1:hover, h2:hover, h3:hover {
   padding: 4px 18px;
   text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.1em;
+  font-size: 1rem;
   margin: 0 5px;
 }
 
@@ -104,7 +97,7 @@ h1:hover, h2:hover, h3:hover {
   border-bottom: 2px solid #ee0b0b;
 }
 
-/* Hero Video with Scroll Effect */
+/* Hero Video */
 .showcase {
   position: relative;
   height: 100vh;
@@ -211,24 +204,30 @@ footer a:hover {
   color: #f0d0d0;
 }
 
-/* Navbar Toggler */
-.navbar-toggler {
-  border: none;
-  padding: 0.5rem;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
 /* Responsive Anpassungen */
 @media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2em;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
   .navbar-nav {
     text-align: center;
     padding-top: 10px;
   }
+}
 
-  .navbar-nav .nav-link {
-    margin: 5px 0;
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1em;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
   }
 }
