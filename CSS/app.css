@@ -1,6 +1,8 @@
-/* General Styles */
+/* Allgemeine Stile */
 body {
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, #2b1a79, #29e0ea, #ff00ff);
+  background-size: 200% 200%;
+  animation: movingGradient 10s ease infinite;
   color: white;
   margin: 0;
   padding: 0;
@@ -14,34 +16,21 @@ h1, h2, h3 {
   color: #9e1616;
 }
 
-  @media (max-width: 400px) {
-    h1, h2, h3 {
-      font-size: 0.9rem; /* Adjust the size as needed */
-      white-space: normal; /* Allow text wrapping */
-      text-align: center; /* Center the text if needed */
-    }
+@media (max-width: 400px) {
+  h1, h2, h3 {
+    font-size: 0.9rem;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 h1:hover, h2:hover, h3:hover {
-    transform: translateY(-2px); /* Verschiebt das Element nach oben */
-      filter: brightness(1.2); /* Erhöht die Helligkeit */
-      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Verändert den Textschatten */
-    }
-  
-
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 /* Navigation */
-
-.rauchen {
- width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-size: 2em;
-}
 .navbar {
   display: flex;
   width: 100%;
@@ -57,7 +46,6 @@ h1:hover, h2:hover, h3:hover {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-1px);
 }
-
 
 .navbar-brand {
   font-weight: bold;
@@ -77,18 +65,12 @@ h1:hover, h2:hover, h3:hover {
   color: #ee0b0b !important;
 }
 
-
-/* Adjust the navbar brand font size and allow wrapping for smaller screens */
 @media (max-width: 600px) {
   .navbar-brand, .nav-link {
-    font-size: 0.9rem; /* Adjust the size as needed */
-    white-space: normal; /* Allow text wrapping */
-    text-align: center; /* Center the text if needed */
+    font-size: 0.9rem;
+    white-space: normal;
+    text-align: center;
   }
-}
-
-.navbar-brand:hover {
-  color: #636b9b !important;
 }
 
 .navbar-nav {
@@ -97,17 +79,17 @@ h1:hover, h2:hover, h3:hover {
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  padding-top: 10px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .nav-link {
-  color: rgb(218, 226, 230) !important;
+  color: rgb(240, 247, 251) !important;
   transition: color 0.3s, transform 0.2s;
   font-weight: bold;
   padding: 4px 18px;
-  text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
+  text-shadow: 7px 2px 12px rgba(11, 1, 1, 0.993);
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.8em;
   margin: 0 5px;
 }
 
@@ -121,7 +103,7 @@ h1:hover, h2:hover, h3:hover {
   border-bottom: 2px solid #ee0b0b;
 }
 
-/* Hero Video with Scroll Effect */
+/* Hero Video */
 .showcase {
   position: relative;
   height: 100vh;
@@ -169,47 +151,143 @@ h1:hover, h2:hover, h3:hover {
   box-shadow: 0px 5px 20px rgb(89, 67, 215);
 }
 
-/* Hidden Elements */
-.hidden {
-  display: none;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.hidden.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* List Items */
-li {
-  font-family: "Bebas Neue", serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-size: 26px;
-}
-
-/* Prices Section */
+/* Preise Section */
 .prices {
-  background: linear-gradient(135deg, #2b1a79, #29e0ea);
-  color: rgba(119, 61, 206, 0.628);
-  text-shadow: 2px 4px 2px rgb(11, 9, 41);
-  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(135deg, #2b1a79, #29e0ea, #ff00ff);
+  background-size: 200% 200%;
+  animation: movingGradient 8s ease infinite;
+  color: white;
+  padding: 100px 20px;
   text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-/* Cards */
-.card {
+.prices h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.prices .card {
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-title {
-  font-size: 2em;
+.prices .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.prices .card-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.prices .card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.prices .btn {
+  background: linear-gradient(135deg, #ff4500, #ff00ff);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.prices .btn:hover {
+  background: linear-gradient(135deg, #00ffff, #ff4500);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.7);
+  transform: scale(1.1);
+}
+
+/* Dienstleistungen Section */
+.services {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.services .card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.services .card-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.services .card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.services .btn {
+  background: linear-gradient(135deg, #ff4500, #ff00ff);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.services .btn:hover {
+  background: linear-gradient(135deg, #00ffff, #ff4500);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.7);
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -248,4 +326,11 @@ footer a:hover {
   .navbar-nav .nav-link {
     margin: 5px 0;
   }
+}
+
+/* Animation für den Farbverlauf */
+@keyframes movingGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
