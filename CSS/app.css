@@ -12,8 +12,8 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: transform 0.3s;
-  text-shadow: 2px 4px 2px black;
-  color: #9e1616;
+  text-shadow: 4px 4px 4px rgb(20, 1, 1);
+  color: #fffdfd;
 }
 
 @media (max-width: 400px) {
@@ -27,7 +27,7 @@ h1, h2, h3 {
 h1:hover, h2:hover, h3:hover {
   transform: translateY(-2px);
   filter: brightness(1.2);
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 10px rgba(38, 13, 40, 0.5);
 }
 
 /* Navigation */
@@ -79,7 +79,7 @@ h1:hover, h2:hover, h3:hover {
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
+  padding-top: 10px;
 }
 
 .nav-link {
@@ -290,22 +290,6 @@ h1:hover, h2:hover, h3:hover {
   transform: scale(1.1);
 }
 
-/* Footer */
-footer {
-  background-color: #1d1115;
-  color: rgba(196, 188, 208, 0.628);
-  padding: 20px 0;
-}
-
-footer a {
-  color: rgba(196, 188, 208, 0.628);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #f0d0d0;
-}
-
 /* Navbar Toggler */
 .navbar-toggler {
   border: none;
@@ -333,4 +317,10 @@ footer a:hover {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.rauchen {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
