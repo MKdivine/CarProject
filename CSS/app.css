@@ -10,8 +10,8 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: transform 0.3s;
-  text-shadow: 2px 4px 2px black;
-  color: #9e1616;
+  text-shadow: 2px 4px 2px rgb(54, 3, 3);
+  color: #ece9e9;
 }
 
 @media (max-width: 400px) {
@@ -91,7 +91,7 @@ h1:hover, h2:hover, h3:hover {
   padding: 4px 18px;
   text-shadow: 7px 2px 12px rgba(1, 12, 46, 0.993);
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1rem;
+  font-size: 1.45rem;
   margin: 0 5px;
 }
 
@@ -172,12 +172,12 @@ li {
   font-family: "Bebas Neue", serif;
   font-weight: 400;
   margin-bottom: 10px;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 /* Prices Section */
 .prices {
-  background: linear-gradient(135deg, #292427, hsl(126, 79%, 43%));
+  background: linear-gradient(135deg, #880c98, hsl(182, 83%, 71%));
   color: rgba(119, 61, 206, 0.628);
   text-shadow: 2px 4px 2px rgb(11, 9, 41);
   padding: 100px 0;
