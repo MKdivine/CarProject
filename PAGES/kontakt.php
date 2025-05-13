@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $nachricht = strip_tags(trim($_POST["nachricht"]));
 
-    $empfaenger = "FahrzeugTechnikUlbricht@gmail.com"; // Deine Zieladresse
+    $empfaenger = "jensboerger23@gmail.com"; // Deine Zieladresse
     $betreff = "Neue Nachricht von der Website";
     $inhalt = "Name: $name\nE-Mail: $email\n\nNachricht:\n$nachricht";
     $header = "From: $email";
