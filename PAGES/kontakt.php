@@ -1,20 +1,20 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $nachricht = strip_tags(trim($_POST["nachricht"]));
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $email = htmlspecialchars(trim($_POST["email"]));
+    $message = htmlspecialchars(trim($_POST["message"]));
 
-    $empfaenger = "jensboerger23@gmail.com"; // Deine Zieladresse
-    $betreff = "Neue Nachricht von der Website";
-    $inhalt = "Name: $name\nE-Mail: $email\n\nNachricht:\n$nachricht";
-    $header = "From: $email";
+    $to = "FahrzeugTechnikUlbricht@gmail.com";
+    $subject = "Neue Nachricht von $name";
+    $body = "Name: $name\nEmail: $email\n\nNachricht:\n$message";
+    $headers = "From: $email";
 
-    if (mail($empfaenger, $betreff, $inhalt, $header)) {
-        echo "<h2 style='text-align:center;color:green;margin-top:50px;'>Vielen Dank! Ihre Nachricht wurde gesendet.</h2>";
+    if (mail($to, $subject, $body, $headers)) {
+        // ✅ Erfolgreich: weiterleiten zur Dankeseite
+        header("Location: danke.html");
+        exit;
     } else {
-        echo "<h2 style='text-align:center;color:red;margin-top:50px;'>Fehler beim Senden der Nachricht.</h2>";
+        echo "Fehler beim Senden der E-Mail.";
     }
-} else {
-    echo "Ungültige Anfrage.";
 }
 ?>

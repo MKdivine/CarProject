@@ -177,8 +177,8 @@ li {
 
 /* Prices Section */
 .prices {
-  background: linear-gradient(135deg, #880c98, hsl(182, 83%, 71%));
-  color: rgba(119, 61, 206, 0.628);
+  /* background: linear-gradient(135deg, #880c98, hsl(182, 83%, 71%));
+  color: rgba(119, 61, 206, 0.628); */
   text-shadow: 2px 4px 2px rgb(11, 9, 41);
   padding: 100px 0;
   text-align: center;
