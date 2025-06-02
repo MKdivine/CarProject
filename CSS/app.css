@@ -18,11 +18,12 @@ h1, h2, h3 {
   transition: transform 0.3s;
   text-shadow: 2px 4px 2px rgb(54, 3, 3);
   color: #ece9e9;
+  margin-top: 20px;
 }
 
 .logo {
   width: auto;
-  height: 40px;
+  height: 80px;
   margin: 10px;
 }
 
@@ -57,6 +58,21 @@ h1, h2, h3 {
     white-space: normal;
     text-align: center;
   }
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: 0.8rem;
+    white-space: normal;
+    text-align: center;
+    margin-top: 50px;
+  }
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  
 }
 
 .impressum {
