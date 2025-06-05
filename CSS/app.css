@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 .introduction {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   text-align: center;
   margin: 100px 100px;
   display: flex;
@@ -38,8 +38,8 @@ h1, h2, h3 {
   text-shadow: 2px 4px 2px rgb(54, 3, 3);
   color: #ece9e9;
   font-weight: 400;
-  line-height: 1.6;
-  padding: 20px;
+  line-height: 1.2;
+  padding: 50px;
   flex-direction: column;
 
 }
@@ -52,17 +52,21 @@ h1, h2, h3 {
   margin-bottom: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   h1, h2, h3 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     white-space: normal;
+    text-align: center;
+  }
+  p {
+    font-size: 0.5rem;
     text-align: center;
   }
 }
 
 @media (max-width: 600px) {
   h1, h2, h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     white-space: normal;
     text-align: center;
     margin-top: 50px;
@@ -76,13 +80,19 @@ h1, h2, h3 {
 }
 
 .impressum {
-    font-size: 12px;
-    color: #ffe8d6;
-    margin-top: 20px;
-    list-style-type: none;
-    padding: 0;     
-    text-align: center;
-    text-decoration: none;
+     color: rgba(196, 188, 208, 0.628);
+ 
+  text-align: center;
+  background-color: #1b1a1a;
+  font-family: 'Bebas Neue', sans-serif;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: ;
+  z-index: 10; /* Höher als .video-container */
+  /* ...deine weiteren Styles... */
 }
 
 h1:hover, h2:hover, h3:hover {
